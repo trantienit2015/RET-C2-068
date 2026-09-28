@@ -1,0 +1,19 @@
+# Agent Manifest - AgentRegistry static entry point.
+# Root-level keys only; `class` is a single dotted import path.
+# Runtime-tunable parameters live in config/config.yaml, not here.
+
+id: RET-C2-068
+name: Retail AI-Driven Customer Traffic Anomaly & Conversion Alert Agent
+namespace: ret
+version: 0.1.0
+enabled: true
+description: Retail AI-Driven Customer Traffic Anomaly & Conversion Alert Agent
+class: src.graph.graph.TrafficAnomalyAlertGraph
+category: Cat 2
+industry: RET
+base_type: ChatAgent
+generation_mode: deterministic
+required_trust_level: VERIFIED_EXTERNAL
+requires:
+  secrets: []
+  extras: []
